@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="controlador.VistaPresencialController">
+   <children>
+      <Label layoutX="64.0" layoutY="61.0" text="DOMICILIO:" />
+      <Label layoutX="64.0" layoutY="129.0" text="PROVINCIA:" />
+      <Label layoutX="318.0" layoutY="61.0" text="TELEFONO:" />
+      <Label layoutX="64.0" layoutY="182.0" text="OBSERVACIONES:" />
+      <TextArea layoutX="87.0" layoutY="208.0" prefHeight="102.0" prefWidth="403.0" />
+      <TextField layoutX="392.0" layoutY="57.0" />
+      <TextField layoutX="141.0" layoutY="125.0" />
+      <TextField layoutX="141.0" layoutY="57.0" />
+      <Button layoutX="425.0" layoutY="346.0" mnemonicParsing="false" text="CONTINUAR" />
+      <Button layoutX="61.0" layoutY="346.0" mnemonicParsing="false" text="ATRAS" />
+   </children>
+</AnchorPane>
