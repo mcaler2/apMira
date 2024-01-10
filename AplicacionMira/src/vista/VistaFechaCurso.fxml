@@ -7,30 +7,30 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="398.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="controlador.VistaFechaCursoController">
+<AnchorPane id="AnchorPane" prefHeight="398.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.VistaFechaCursoController">
    <children>
-      <Button layoutX="263.0" layoutY="340.0" mnemonicParsing="false" text="CONTINUAR" />
+      <Button fx:id="btnCont" layoutX="465.0" layoutY="342.0" mnemonicParsing="false" onAction="#cont" text="CONTINUAR" />
       <Label layoutX="68.0" layoutY="68.0" text="FECHA INICIO:" />
       <Label layoutX="68.0" layoutY="121.0" text="DURACIÓN:" />
       <Label layoutX="266.0" layoutY="121.0" text="HORAS" />
       <Label layoutX="162.0" layoutY="121.0" text="DÍAS" />
-      <TextField layoutX="197.0" layoutY="117.0" prefHeight="26.0" prefWidth="42.0" />
-      <TextField layoutX="319.0" layoutY="117.0" prefHeight="26.0" prefWidth="90.0" />
-      <DatePicker layoutX="162.0" layoutY="64.0" />
+      <TextField fx:id="txtDias" layoutX="197.0" layoutY="117.0" onAction="#dias" prefHeight="26.0" prefWidth="42.0" />
+      <TextField fx:id="txtHoras" layoutX="319.0" layoutY="117.0" onAction="#horas" prefHeight="26.0" prefWidth="90.0" />
+      <DatePicker fx:id="tmpFechaInicio" layoutX="162.0" layoutY="64.0" onAction="#fechaInicio" />
       <Label layoutX="68.0" layoutY="169.0" text="ZONA HORARIA:" />
-      <TextField layoutX="167.0" layoutY="164.0" prefHeight="26.0" prefWidth="50.0" />
+      <TextField fx:id="txtZona" layoutX="167.0" layoutY="164.0" onAction="#zona" prefHeight="26.0" prefWidth="50.0" />
       <Label layoutX="68.0" layoutY="217.0" text="HORARIO:" />
       <Label layoutX="162.0" layoutY="217.0" text="INICIO" />
-      <TextField layoutX="207.0" layoutY="212.0" prefHeight="26.0" prefWidth="42.0" />
+      <TextField fx:id="txtIniHorario" layoutX="207.0" layoutY="212.0" onAction="#iniHorario" prefHeight="26.0" prefWidth="42.0" />
       <Label layoutX="266.0" layoutY="217.0" text="FIN" />
-      <TextField layoutX="292.0" layoutY="212.0" prefHeight="26.0" prefWidth="90.0" />
-      <CheckBox layoutX="68.0" layoutY="281.0" mnemonicParsing="false" text="L" />
-      <CheckBox layoutX="117.0" layoutY="281.0" mnemonicParsing="false" text="M" />
-      <CheckBox layoutX="165.0" layoutY="281.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="39.0" text="MI" />
-      <CheckBox layoutX="214.0" layoutY="281.0" mnemonicParsing="false" text="J" />
-      <CheckBox layoutX="261.0" layoutY="281.0" mnemonicParsing="false" text="V" />
-      <CheckBox layoutX="305.0" layoutY="281.0" mnemonicParsing="false" text="S" />
-      <CheckBox layoutX="350.0" layoutY="281.0" mnemonicParsing="false" text="D" />
+      <TextField fx:id="txtFinHorario" layoutX="292.0" layoutY="212.0" onAction="#finHorario" prefHeight="26.0" prefWidth="90.0" />
+      <CheckBox fx:id="checkL" layoutX="68.0" layoutY="281.0" mnemonicParsing="false" onAction="#lunes" text="L" />
+      <CheckBox fx:id="checkM" layoutX="117.0" layoutY="281.0" mnemonicParsing="false" onAction="#martes" text="M" />
+      <CheckBox fx:id="checkMi" layoutX="165.0" layoutY="281.0" mnemonicParsing="false" onAction="#miercoles" prefHeight="18.0" prefWidth="39.0" text="MI" />
+      <CheckBox fx:id="checkJ" layoutX="214.0" layoutY="281.0" mnemonicParsing="false" onAction="#jueves" text="J" />
+      <CheckBox fx:id="checkV" layoutX="261.0" layoutY="281.0" mnemonicParsing="false" onAction="#viernes" text="V" />
+      <CheckBox fx:id="checkS" layoutX="305.0" layoutY="281.0" mnemonicParsing="false" onAction="#sabado" text="S" />
+      <CheckBox fx:id="checkD" layoutX="350.0" layoutY="281.0" mnemonicParsing="false" onAction="#domingo" text="D" />
+      <Button fx:id="btnAtras" layoutX="64.0" layoutY="342.0" mnemonicParsing="false" onAction="#atras" text="ATRAS" />
    </children>
 </AnchorPane>

@@ -121,7 +121,7 @@ public class Main extends Application {
 
             Scene scene = new Scene(root);
             primaryStage.setScene(scene);
-            primaryStage.setTitle("Vista resumen horarios");
+            primaryStage.setTitle("Vista introducir horarios");
             primaryStage.show();
         } catch (IOException e) {
             e.printStackTrace();
