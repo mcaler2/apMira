@@ -39,6 +39,6 @@ public class MenuController {
 
     @FXML
     private void showView3(ActionEvent event) {
-        mainApp.showView3("View3.fxml");
+        this.mainApp.showPresencial("VistaPresencial.fxml");
     }
 }

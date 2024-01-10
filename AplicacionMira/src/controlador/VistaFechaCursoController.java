@@ -13,8 +13,8 @@ import javafx.fxml.Initializable;
  *
  * @author m.caler
  */
-public class FechaCursoController implements Initializable {
-
+public class VistaFechaCursoController implements Initializable {
+    private Main mainApp;
     /**
      * Initializes the controller class.
      */
@@ -22,5 +22,10 @@ public class FechaCursoController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+    
+    
+    public void setMainApp(Main mainApp) {
+        this.mainApp = mainApp;
+    }
     
 }

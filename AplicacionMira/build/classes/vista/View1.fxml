@@ -9,7 +9,7 @@
 
 <AnchorPane prefHeight="323.0" prefWidth="372.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.View1Controller">
     <Label layoutX="120.0" layoutY="21.0" text="ABRIR RESERVA CURSO" />
-    <Button layoutX="141.0" layoutY="271.0" onAction="#backToMenu" text="CONTINUAR" />
+    <Button fx:id="btnAtras" layoutX="46.0" layoutY="271.0" onAction="#atras" text="ATRAS" />
    <Label layoutX="34.0" layoutY="162.0" text="MODALIDAD" />
    <TextField fx:id="txtNCC" layoutX="34.0" layoutY="102.0" onAction="#ncc" />
    <Label layoutX="34.0" layoutY="73.0" text="NCC" />
@@ -17,4 +17,5 @@
    <CheckBox layoutX="44.0" layoutY="196.0" mnemonicParsing="false" text="PRESENCIAL" />
    <Hyperlink layoutX="217.0" layoutY="193.0" text="REMOTO" />
    <TextField fx:id="txtNCC1" layoutX="192.0" layoutY="226.0" onAction="#ncc" text="Enlace webex" />
+   <Button fx:id="btnCont" layoutX="232.0" layoutY="271.0" onAction="#cont" text="CONTINUAR" />
 </AnchorPane>

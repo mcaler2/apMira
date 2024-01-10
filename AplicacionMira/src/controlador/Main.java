@@ -93,6 +93,57 @@ public class Main extends Application {
             e.printStackTrace();
         }
     }
+    
+    public void showPresencial(String fxmlFile) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/vista/" + fxmlFile));
+            Parent root = loader.load();
+
+            VistaPresencialController controller = loader.getController();
+            controller.setMainApp(this);
+
+            Scene scene = new Scene(root);
+            primaryStage.setScene(scene);
+            primaryStage.setTitle("Vista información presencial");
+            primaryStage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    
+    public void showFechaCurso(String fxmlFile) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/vista/" + fxmlFile));
+            Parent root = loader.load();
+
+            VistaFechaCursoController controller = loader.getController();
+            controller.setMainApp(this);
+
+            Scene scene = new Scene(root);
+            primaryStage.setScene(scene);
+            primaryStage.setTitle("Vista resumen horarios");
+            primaryStage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    
+    public void showFinalFecha(String fxmlFile) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/vista/" + fxmlFile));
+            Parent root = loader.load();
+
+            VistaFinalFechaController controller = loader.getController();
+            controller.setMainApp(this);
+
+            Scene scene = new Scene(root);
+            primaryStage.setScene(scene);
+            primaryStage.setTitle("Vista resumen horarios");
+            primaryStage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
 
     public static void main(String[] args) {

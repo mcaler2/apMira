@@ -14,7 +14,7 @@ import javafx.fxml.Initializable;
  * @author m.caler
  */
 public class VistaFinalFechaController implements Initializable {
-
+    private Main mainApp;
     /**
      * Initializes the controller class.
      */
@@ -22,5 +22,9 @@ public class VistaFinalFechaController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+    
+    public void setMainApp(Main mainApp) {
+        this.mainApp = mainApp;
+    }
     
 }

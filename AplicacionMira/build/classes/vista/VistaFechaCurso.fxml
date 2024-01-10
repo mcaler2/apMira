@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane id="AnchorPane" prefHeight="398.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="controlador.FechaCursoController">
+<AnchorPane id="AnchorPane" prefHeight="398.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="controlador.VistaFechaCursoController">
    <children>
       <Button layoutX="263.0" layoutY="340.0" mnemonicParsing="false" text="CONTINUAR" />
       <Label layoutX="68.0" layoutY="68.0" text="FECHA INICIO:" />
