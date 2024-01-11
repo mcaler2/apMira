@@ -119,7 +119,7 @@ public class VistaFechaCursoController implements Initializable {
 
     @FXML
     private void atras(ActionEvent event) {
-        this.mainApp.showPresencial("VistaPresencial.fxml");
+        this.mainApp.showFechaCurso("VistaFechaCurso.fxml");
     }
 
     @FXML

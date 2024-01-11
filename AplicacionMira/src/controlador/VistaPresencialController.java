@@ -71,6 +71,6 @@ public class VistaPresencialController implements Initializable {
 
     @FXML
     private void cont(ActionEvent event) {
-        this.mainApp.showPresencial("VistaPresencial.fxml");
+        this.mainApp.showFechaCurso("VistaFechaCurso.fxml");
     }
 }
