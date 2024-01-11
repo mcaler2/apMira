@@ -1,11 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.VistaDatosFinalController">
-    
+
+<AnchorPane id="AnchorPane" prefHeight="614.0" prefWidth="399.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="controlador.VistaDatosFinalController">
+   <children>
+      <Label layoutX="39.0" layoutY="134.0" text="MODALIDAD" />
+      <TextField fx:id="txtNCC" layoutX="79.0" layoutY="79.0" onAction="#ncc" />
+      <Label layoutX="44.0" layoutY="83.0" text="NCC" />
+      <TextField fx:id="txtNCC2" layoutX="127.0" layoutY="130.0" onAction="#ncc" prefHeight="26.0" prefWidth="99.0" />
+      <Button fx:id="btnCont" layoutX="250.0" layoutY="130.0" onAction="#cont" text="INFORMACIÓN" />
+      <Button fx:id="btnCont1" layoutX="284.0" layoutY="561.0" mnemonicParsing="false" onAction="#cont" text="CONTINUAR" />
+      <Label layoutX="40.0" layoutY="188.0" text="FECHA INICIO:" />
+      <Label layoutX="39.0" layoutY="293.0" text="DURACIÓN:" />
+      <Label layoutX="229.0" layoutY="294.0" text="HORAS" />
+      <Label layoutX="129.0" layoutY="294.0" text="DÍAS" />
+      <TextField fx:id="txtDias" layoutX="164.0" layoutY="289.0" onAction="#dias" prefHeight="26.0" prefWidth="42.0" />
+      <TextField fx:id="txtHoras" layoutX="278.0" layoutY="289.0" onAction="#horas" prefHeight="26.0" prefWidth="90.0" />
+      <DatePicker fx:id="tmpFechaInicio" layoutX="135.0" layoutY="184.0" onAction="#fechaInicio" />
+      <Label layoutX="36.0" layoutY="341.0" text="ZONA HORARIA:" />
+      <TextField fx:id="txtZona" layoutX="137.0" layoutY="336.0" onAction="#zona" prefHeight="26.0" prefWidth="50.0" />
+      <Label layoutX="40.0" layoutY="387.0" text="HORARIO:" />
+      <TextField fx:id="txtFinHorario" layoutX="127.0" layoutY="383.0" onAction="#finHorario" prefHeight="26.0" prefWidth="90.0" />
+      <CheckBox fx:id="checkL" layoutX="34.0" layoutY="443.0" mnemonicParsing="false" onAction="#lunes" text="L" />
+      <CheckBox fx:id="checkM" layoutX="74.0" layoutY="443.0" mnemonicParsing="false" onAction="#martes" text="M" />
+      <CheckBox fx:id="checkMi" layoutX="122.0" layoutY="443.0" mnemonicParsing="false" onAction="#miercoles" prefHeight="18.0" prefWidth="39.0" text="MI" />
+      <CheckBox fx:id="checkJ" layoutX="171.0" layoutY="443.0" mnemonicParsing="false" onAction="#jueves" text="J" />
+      <CheckBox fx:id="checkV" layoutX="211.0" layoutY="443.0" mnemonicParsing="false" onAction="#viernes" text="V" />
+      <CheckBox fx:id="checkS" layoutX="254.0" layoutY="443.0" mnemonicParsing="false" onAction="#sabado" text="S" />
+      <CheckBox fx:id="checkD" layoutX="294.0" layoutY="443.0" mnemonicParsing="false" onAction="#domingo" text="D" />
+      <Button fx:id="btnAtras" layoutX="22.0" layoutY="561.0" mnemonicParsing="false" onAction="#atras" text="ATRAS" />
+      <Label layoutX="38.0" layoutY="237.0" text="FECHA FIN:" />
+      <DatePicker fx:id="tmpFechaInicio1" layoutX="135.0" layoutY="233.0" onAction="#fechaInicio" />
+   </children>
 </AnchorPane>
