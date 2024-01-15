@@ -43,51 +43,17 @@ public class Main extends Application {
         }
     }
 
-    public void showView1(String fxmlFile) {
+    public void showAbrirCurso(String fxmlFile) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/vista/" + fxmlFile));
             Parent root = loader.load();
 
-            View1Controller controller = loader.getController();
+            VistaAbrirCursoController controller = loader.getController();
             controller.setMainApp(this);
 
             Scene scene = new Scene(root);
             primaryStage.setScene(scene);
-            primaryStage.setTitle("Vista1");
-            primaryStage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-    
-    public void showView2(String fxmlFile) {
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/vista/" + fxmlFile));
-            Parent root = loader.load();
-
-            View2Controller controller = loader.getController();
-            controller.setMainApp(this);
-
-            Scene scene = new Scene(root);
-            primaryStage.setScene(scene);
-            primaryStage.setTitle("Vista2");
-            primaryStage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public void showView3(String fxmlFile) {
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/vista/" + fxmlFile));
-            Parent root = loader.load();
-
-            View3Controller controller = loader.getController();
-            controller.setMainApp(this);
-
-            Scene scene = new Scene(root);
-            primaryStage.setScene(scene);
-            primaryStage.setTitle("Vista3");
+            primaryStage.setTitle("Iniciar Curso");
             primaryStage.show();
         } catch (IOException e) {
             e.printStackTrace();
@@ -148,5 +114,23 @@ public class Main extends Application {
 
     public static void main(String[] args) {
         launch(args);
+    }
+    
+    
+     public void showPrueba(String fxmlFile) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/vista/" + fxmlFile));
+            Parent root = loader.load();
+
+            VistaPruebaController controller = loader.getController();
+            controller.setMainApp(this);
+
+            Scene scene = new Scene(root);
+            primaryStage.setScene(scene);
+            primaryStage.setTitle("Vista prueba ejecución");
+            primaryStage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

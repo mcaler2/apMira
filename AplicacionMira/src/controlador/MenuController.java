@@ -18,27 +18,20 @@ import javafx.fxml.Initializable;
  */
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 
 public class MenuController {
 
     private controlador.Main mainApp;
+    @FXML
+    private Button btnAbrirCurso;
 
     public void setMainApp(controlador.Main mainApp) {
         this.mainApp = mainApp;
     }
 
     @FXML
-    private void showView1(ActionEvent event) {
-        mainApp.showView1("View1.fxml");
-    }
-
-    @FXML
-    private void showView2(ActionEvent event) {
-        mainApp.showView2("View2.fxml");
-    }
-
-    @FXML
-    private void showView3(ActionEvent event) {
-        this.mainApp.showPresencial("VistaPresencial.fxml");
+    private void abrirCurso(ActionEvent event) {
+        mainApp.showAbrirCurso("VistaAbrirCurso.fxml");
     }
 }

@@ -13,6 +13,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
+import modelo.ModeloDatos;
 
 /**
  * FXML Controller class
@@ -66,11 +67,24 @@ public class VistaPresencialController implements Initializable {
 
     @FXML
     private void atras(ActionEvent event) {
-        this.mainApp.showMenu();
+        this.mainApp.showAbrirCurso("VistaAbrirCurso.fxml");
     }
 
     @FXML
     private void cont(ActionEvent event) {
-        this.mainApp.showFechaCurso("VistaFechaCurso.fxml");
+        // Obtener la instancia de ModeloDatos
+        ModeloDatos modeloDatos = ModeloDatos.getInstance();
+
+        String domicilio = txtDomicilio.getText();
+        String tel = txtTelefono.getText();
+        String provincia = txtProvincia.getText();
+        String obs = txtObs.getText();
+        
+        modeloDatos.agregarDato("DOMICILIO",domicilio);
+        modeloDatos.agregarDato("TELEFONO",tel);
+        modeloDatos.agregarDato("PROVINCIA",provincia);
+        modeloDatos.agregarDato("OBS",obs);
+
+        this.mainApp.showFinalFecha("VistaFinalFecha.fxml");
     }
 }

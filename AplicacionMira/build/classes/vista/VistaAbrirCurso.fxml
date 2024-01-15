@@ -7,15 +7,15 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="323.0" prefWidth="372.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.View1Controller">
+<AnchorPane prefHeight="323.0" prefWidth="372.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.VistaAbrirCursoController">
     <Label layoutX="120.0" layoutY="21.0" text="ABRIR RESERVA CURSO" />
     <Button fx:id="btnAtras" layoutX="46.0" layoutY="271.0" onAction="#atras" text="ATRAS" />
    <Label layoutX="34.0" layoutY="162.0" text="MODALIDAD" />
    <TextField fx:id="txtNCC" layoutX="34.0" layoutY="102.0" onAction="#ncc" />
    <Label layoutX="34.0" layoutY="73.0" text="NCC" />
-   <CheckBox layoutX="192.0" layoutY="196.0" mnemonicParsing="false" />
-   <CheckBox layoutX="44.0" layoutY="196.0" mnemonicParsing="false" text="PRESENCIAL" />
-   <Hyperlink layoutX="217.0" layoutY="193.0" text="REMOTO" />
-   <TextField fx:id="txtNCC1" layoutX="192.0" layoutY="226.0" onAction="#ncc" text="Enlace webex" />
+   <CheckBox fx:id="chkRemoto" layoutX="192.0" layoutY="196.0" mnemonicParsing="false" onAction="#remoto" />
+   <CheckBox fx:id="chkPresencial" layoutX="44.0" layoutY="196.0" mnemonicParsing="false" onAction="#presencial" text="PRESENCIAL" />
+   <TextField fx:id="txtEnlace" layoutX="192.0" layoutY="226.0" onAction="#enlace" text="Enlace webex" />
    <Button fx:id="btnCont" layoutX="232.0" layoutY="271.0" onAction="#cont" text="CONTINUAR" />
+   <Hyperlink fx:id="enlaceWebex" layoutX="216.0" layoutY="193.0" onAction="#enlaceWebex" text="REMOTO" />
 </AnchorPane>

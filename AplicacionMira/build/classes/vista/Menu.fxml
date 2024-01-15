@@ -4,9 +4,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="248.0" prefWidth="291.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.MenuController">
-    <Button layoutX="120.0" layoutY="98.0" onAction="#showView1" text="Vista 1" />
-    <Button layoutX="120.0" layoutY="140.0" onAction="#showView2" text="Vista 2" />
-    <Button layoutX="120.0" layoutY="184.0" onAction="#showView3" text="Vista 3" />
-   <Label layoutX="128.0" layoutY="56.0" text="Vista 3" />
+<AnchorPane prefHeight="165.0" prefWidth="291.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.MenuController">
+    <Button fx:id="btnAbrirCurso" layoutX="108.0" layoutY="98.0" onAction="#abrirCurso" text="Abrir Curso" />
+   <Label layoutX="128.0" layoutY="54.0" text="Menu" />
 </AnchorPane>
