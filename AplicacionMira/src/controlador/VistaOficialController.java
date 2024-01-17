@@ -6,7 +6,12 @@ package controlador;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.ChoiceBox;
+import javafx.scene.input.MouseEvent;
 
 /**
  * FXML Controller class
@@ -15,6 +20,18 @@ import javafx.fxml.Initializable;
  */
 public class VistaOficialController implements Initializable {
 
+    @FXML
+    private ChoiceBox<?> selCursoOficial;
+    @FXML
+    private Button btnConf;
+    @FXML
+    private Button btnAtras;
+    
+    private Main mainApp;
+     
+    public void setMainApp(Main mainApp) {
+        this.mainApp = mainApp;
+    }
     /**
      * Initializes the controller class.
      */
@@ -22,5 +39,20 @@ public class VistaOficialController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+
+    @FXML
+    private void cursoOficial(MouseEvent event) {
+    }
+
+    @FXML
+    private void cont(ActionEvent event) {       
+        //this.mainApp.showFinalFecha("VistaPresencial.fxml");
+        this.mainApp.showPrueba("VistaPrueba.fxml");
+    }
+
+    @FXML
+    private void atras(ActionEvent event) {
+        this.mainApp.showFinalFecha("VistaFinalFecha.fxml");
+    }
     
 }

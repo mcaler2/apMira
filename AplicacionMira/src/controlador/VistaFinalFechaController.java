@@ -5,6 +5,7 @@
 package controlador;
 
 import java.net.URL;
+import java.sql.SQLException;
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -122,8 +123,10 @@ public class VistaFinalFechaController implements Initializable {
     }
 
     @FXML
-    private void cont(ActionEvent event) {       
+    private void cont(ActionEvent event) throws SQLException {       
         //this.mainApp.showFinalFecha("VistaPresencial.fxml");
+        ModeloDatos modeloDatos = ModeloDatos.getInstance();
+        modeloDatos.insertarTodo();
         this.mainApp.showPrueba("VistaPrueba.fxml");
     }
 
